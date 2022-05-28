@@ -16,6 +16,8 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+            <groovy.version>3.0.6</groovy.version>
+            <rest-assured.version>4.3.2</rest-assured.version>
     </properties>
 
     <dependencies>
@@ -31,14 +33,25 @@
             <version>3.141.59</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.5.1</version>
+            <version>3.3.0</version>
+            <scope>test</scope>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
 
 
         <dependency>
@@ -51,7 +64,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>6.9.0</version>
-            <scope>test</scope>
         </dependency>
 
 
@@ -59,7 +71,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <version>2.4.0</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>

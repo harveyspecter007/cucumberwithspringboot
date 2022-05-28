@@ -1,4 +1,4 @@
-package com.home;
+package com.home.stepdefs;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
